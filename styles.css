@@ -97,6 +97,11 @@ a{
     transition: all 3s;
 }
 
+#resume-btn{
+  display: flex;
+  gap: 20px;
+}
+
 .hero-section-left{
     /* width:100%; */
     display: flex;
@@ -689,6 +694,12 @@ footer{
   align-items:center;
 }
 
+#copyright{
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
 .footer-faded-text{
   position:absolute;
   left:0;
@@ -734,13 +745,5 @@ footer{
 }
 
 
-#resume-btn{
-  display: flex;
-  gap: 20px;
-}
 
-#copyright{
-  position: absolute;
-  right: 5%;
-  bottom: 10%;
-}
+
