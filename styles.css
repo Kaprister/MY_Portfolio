@@ -3,7 +3,7 @@
 *{
   margin:0;
   padding:0;
-  /* box-sizing:border-box; */
+  box-sizing:border-box;
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
 }
@@ -12,10 +12,11 @@
 }
 
 #wrapper{
-    height:100vh;
+    width: 100vh;
     overflow-y:auto;
     overflow-x: hidden;
 }
+
 
 .container{
     width:1200px;
@@ -91,7 +92,7 @@ a{
     color:rgb(231,231,231);
     
     bottom: -16%;
-    left: -5%;
+    left: -3.5%;
     font-weight: bold;
     transition: all 3s;
 }
@@ -311,10 +312,15 @@ a{
     gap:120px;
   }
 
+
+/* projects section */
+
+
+
   .project-card{
     width:90%;
     height:550px;
-    background-image: url(./images/projects/Project1.png);
+    /* background-image: url(images\projects/Project1.png); */
     background-size: cover;
     /* background-repeat: no-repeat; */
     position:relative;
@@ -330,7 +336,7 @@ a{
     bottom:0;
     background-color: #1f1f1f9a;
     z-index:0;
-    /* transform: scaleX(1); */
+    transform: scale(1);
   }
 
   .project-card::before{
@@ -356,14 +362,14 @@ a{
     font-size:200px;
     font-weight:600;
     color:white;
-    z-index:10;
-    /* display:none; */
-    opacity: 0;
+    z-index:3;
+    display:none;
+    /* opacity: 0; */
   }
 
   .project-card:hover .project-number{
-    /* display:block; */
-    opacity: 1;
+    display:block;
+    /* opacity: 1; */
   }
 
   .project-number-right{
@@ -448,22 +454,22 @@ a{
   }
 
   #project1{
-    background-image: url(./images/projects/Project1.png);
+    background-image: url(./images/projects/StudyNotion.png);
   }
 
   #project2{
     margin-left:120px;
-    background-image: url(./images/projects/Project2.png);
+    background-image: url(./images/projects/DevDetective.png);
   }
   #project3{
-    background-image: url(./images/projects/Project3.png);
+    background-image: url(./images/projects/to-do-list.png);
   }
   #project4{
     margin-left:120px;
-    background-image: url(./images/projects/Project4.png);
+    background-image: url(./images/projects/password-generator.png);
   }
 
-  @media (max-width:1300px) {
+  /* @media (max-width:1300px) {
     .page-header {
       padding-top: 30px;
       color: var(--bgOrange);
@@ -500,13 +506,13 @@ a{
     .project-sub-heading {
       width: 100%;
     }
-    #project2 {
+    /* #project2 {
       margin-left: 0;
     }
     #project4 {
       margin-left: 0;
-    }
-    .project-skill-container {
+    } */
+    /* .project-skill-container {
       width: 100%;
     }
     .project-skill {
@@ -517,8 +523,8 @@ a{
     }
     .project-card:hover .project-content {
       scale: 0.55;
-    }
-  }
+    } */
+  /* } */ 
 
   .skills-container{
     position:relative;
@@ -548,8 +554,8 @@ a{
   font-size:15em;
   font-style:bold;
   color:rgb(231,231,231);
-  bottom:-34.5%;
-  right:-25%;
+  bottom:-38%;
+  right:-4%;
   user-select:none;
   overflow-y:hidden;
 }
@@ -679,21 +685,22 @@ footer{
   display:flex;
   gap:1rem;
   padding:1.2rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items:center;
 }
 
 .footer-faded-text{
   position:absolute;
   left:0;
-  bottom:0;color:#535c87;
+  bottom:0%;
+  color:#535c87;
   user-select:none;
   font-size:5em;
 }
 
 .link-wrapper{
   display:flex;
-  gap:1.2rem;
+  gap:2rem;
 }
 
 .link-wrapper div a{
@@ -708,5 +715,32 @@ footer{
 
 .icon-wrapper{
   display:flex;
-  gap:1rem;
+  gap:2rem;
+}
+
+
+
+@media (max-width:800px) {
+  .skills-container{
+    flex-direction: column;
+    gap: 100px;
+  }
+  #project2 {
+    margin-left: 0;
+  }
+  #project4 {
+    margin-left: 0;
+  }
+}
+
+
+#resume-btn{
+  display: flex;
+  gap: 20px;
+}
+
+#copyright{
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
 }
